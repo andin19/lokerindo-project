@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+
+    <!-- UIkit CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+
+</head>
+<body>
+    <div class="uk-container uk-container-large">
+        <div class="area-header">
+           <div uk-grid>
+                <div class="uk-width-1-2">
+                    <div class="area-logo">
+                        <h1>
+                            LOKERINDO
+                        </h1>
+                        <h6>
+                            Find Your Dream Job Here
+                        </h6>
+                    </div>
+                </div>
+                <div class="uk-width-1-2">
+                    <div class="area-button">
+                        <div uk-grid>
+                            <div class="uk-width-1-2">
+                                <div class="button-bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <div class="button-bell">
+                                    <i class="fa fa-bell"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div class="area-button-search">
+            <div uk-grid>
+                <div class="uk-width-1-1">
+                    <button class="uk-button uk-button-default uk-width-1-1">
+                        Search for job vacancies
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="area-training">
+            <div class="title-area-level-1">
+                <h6>
+                    <b>
+                        Training
+                    </b>
+                </h6>
+            </div>
+            <div class="area-content-training">
+                <div class="card-company">
+                    <div uk-grid>
+                        <div class="uk-width-1-2">
+                            <div>
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                            <div class="title-content-training">
+                                <h6>
+                                    Akuntansi
+                                </h6>
+                            </div>
+                            <div class="poin-content-training">
+                                <p>
+                                    Poin 120
+                                </p>
+                            </div>
+                            <div class="button-continue">
+                                <button class="uk-button uk-button-default button-continue-item">
+                                    Continue
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="area-company-review">
+            <div class="title-area-level-1">
+                <h6>
+                    <b>
+                        Company Review
+                    </b>
+                </h6>
+            </div>
+            <div class="uk-width-1-1" >
+                <div class="area-card-company" >
+                    <div class="card-company">
+                        <img src="assets/logo.jpg"/>
+                    </div>
+                    <div class="card-company">
+                        <img src="assets/logo 3.jpg"/>
+                    </div>
+                    <div class="card-company">
+                        <img src="assets/logo  2.png"/>
+                    </div>
+                    <div class="card-company">
+                        <img src="assets/logo 4.jpg"/>
+                    </div>
+                    <div class="card-company">
+                        <img src="assets/logo 5.jpg"/>
+                    </div>
+                    <div class="card-company">
+                        <img src="assets/logo 6.jpg"/>
+                    </div>
+                    <div class="card-company">
+                        <img src="assets/logo 7.jpg"/>
+                    </div>
+                    <div class="card-company">
+                        <img src="assets/logo 8.jpg"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="area-job-news">
+            <div class="title-area-level-1">
+                <h6>
+                    <b>
+                        Job News
+                    </b>
+                </h6>
+            </div>
+        </div>
+        <div class="area-interview-tips">
+            <div class="title-area-level-1">
+                <h6>
+                    <b>
+                        Interview Tips
+                    </b>
+                </h6>
+            </div>
+        </div>
+        <div class="area-navigation-bar">
+            <div class="title-area-level-1">
+                <h6>
+                    <b>
+                        Navigation Bar
+                    </b>
+                </h6>
+            </div>
+        </div>
+    </div>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script>
+        var data = {
+            labels: [
+                "Red",
+                "Blue",
+                "Yellow"
+            ],
+            datasets: [
+                {
+                data: [300, 50, 100],
+                backgroundColor: [
+                    "#FF6384",
+                    "#36A2EB",
+                    "#FFCE56"
+                ],
+                hoverBackgroundColor: [
+                    "#FF6384",
+                    "#36A2EB",
+                    "#FFCE56"
+                ]
+                }]
+            };
+
+            var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
+                type: 'doughnut',
+                data: data,
+                options: {
+                    responsive: true,
+                    legend: {
+                    display: false
+                    }
+                }
+            });
+
+            Chart.pluginService.register({
+            beforeDraw: function(chart) {
+                var width = chart.chart.width,
+                    height = chart.chart.height,
+                    ctx = chart.chart.ctx;
+
+                ctx.restore();
+                var fontSize = (height / 114).toFixed(2);
+                ctx.font = fontSize + "em sans-serif";
+                ctx.textBaseline = "middle";
+
+                var text = "75%",
+                    textX = Math.round((width - ctx.measureText(text).width) / 2),
+                    textY = height / 2;
+
+                ctx.fillText(text, textX, textY);
+                ctx.save();
+            }
+            });
+    </script>
+</body>
+</html>

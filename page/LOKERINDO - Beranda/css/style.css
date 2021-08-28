@@ -1,0 +1,93 @@
+.area-header{
+    margin-top: 25px;
+}
+.area-button-search{
+    margin-top: 35px;
+}
+.area-training{
+    margin-top: 15px;
+}
+.area-company-review{
+    margin-top: 15px;
+}
+.area-job-news{
+    margin-top: 15px;
+}
+.area-interview-tips{
+    margin-top: 15px;
+}
+.area-navigation-bar{
+    margin-top: 15px;
+}
+.area-logo{
+    
+}
+.area-logo > h1{
+    margin-bottom: 0px !important;
+}
+.area-logo > h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.area-button{
+    text-align: center;
+    margin-top: 10px;
+}
+.button-bell{
+    width: 55px;
+    height: 50px;
+    background-color:#B8BAE3;
+    font-size: 18pt;
+    margin-left: 15px;
+    border-radius: 100px;
+    padding-top: 5px;
+}
+.button-bookmark{
+    width: 55px;
+    height: 50px;
+    background-color:#B8BAE3;
+    font-size: 18pt;
+    margin-left: 15px;
+    border-radius: 100px;
+    padding-top: 5px;
+}
+.area-card-company{
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 125px;
+}
+
+.area-card-company > div{
+    display: inline-block;
+    border: 1px solid #d7d7d7;
+    border-radius: 15px;
+    padding: 5px;
+    width: 148px;
+}
+
+.card-company img {
+    height: 100px;
+    object-fit:contain;
+}
+.area-content-training{
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 150px;
+}
+.area-content-training > div{
+    display: inline-block;
+    border: 1px solid #d7d7d7;
+    border-radius: 15px;
+    padding: 5px;
+    width: 250px;
+    background-color: #B8BAE3;
+}
+
+.button-continue-item{
+    padding: 0px 15px !important;
+}
+.poin-content-training, .button-continue{
+    margin-top: -15px;
+}
