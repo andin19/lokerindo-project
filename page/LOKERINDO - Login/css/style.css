@@ -1,0 +1,42 @@
+.area-icon{
+    
+    text-align:center;
+    margin: 60px 0px;
+}
+
+.area-title{
+
+}
+
+.area-form-login  input{
+    width : 100%;
+    margin: 5px 0px;
+}
+.area-button-login{
+
+    text-align:center;
+}
+.area-button-login > button{
+    border-radius: 15px;
+    background-color: #772EB0;
+    color: white;
+    width: 180px;
+}
+.area-other-login{
+
+    text-align:center;
+}
+
+.other-login-item{
+    
+}
+.other-login-item img{
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+    border: 1px solid #B8BAE3;
+    border-radius: 8px;
+}
+.caption-login{
+    margin: 15px 0px;
+}
