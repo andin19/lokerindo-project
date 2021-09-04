@@ -3,7 +3,7 @@
     margin-top: 25px;
 }
 .area-button-search{
-    margin-top: 35px;
+    margin-top: 10px;
    
 }
 .area-button-search button{
@@ -38,7 +38,7 @@
     margin-bottom: 0px;
 }
 .area-button{
-    text-align: center;
+    text-align: right;
     margin-top: 10px;
 }
 .button-bell{
@@ -51,13 +51,12 @@
     padding-top: 5px;
 }
 .button-bookmark{
-    width: 55px;
-    height: 50px;
+    width: 46px;
+    height: 46px;
     background-color:#B8BAE3;
-    font-size: 18pt;
-    margin-left: 15px;
+    font-size: 14pt;
     border-radius: 100px;
-    padding-top: 5px;
+    padding:5px 0px !important;
 }
 .area-card-company{
     overflow: hidden;
@@ -89,8 +88,11 @@
     border: 1px solid #d7d7d7;
     border-radius: 15px;
     padding: 5px;
-    width: 250px;
     background-color: #B8BAE3;
+}
+
+.chart{
+    padding: 5px;
 }
 
 .button-continue-item{
@@ -122,3 +124,31 @@
     object-fit:cover;
     border-radius: 15px;
 }
+
+.area-menu{
+    background: #772EB0;
+    bottom: 0;
+    width:100%;
+    position: fixed;
+}
+
+.area-menu ul {
+    list-style-type: none;
+
+  }
+  
+.area-menu  li {
+    float: left;
+    padding: 5px 6px;
+  }
+  
+.area-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+.area-menu li a:hover {
+    background-color: #111111;
+  }
