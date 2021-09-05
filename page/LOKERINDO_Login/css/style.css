@@ -1,42 +1,51 @@
-.area-icon{
-    
-    text-align:center;
+.area-icon {
+    text-align: center;
     margin: 60px 0px;
+    margin: 30px !important;
+    margin-bottom: 10px !important;
 }
 
-.area-title{
-
+.area-title {
+    text-align: left !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-bottom: -20px;
+    color: black;
 }
 
-.area-form-login  input{
+.area-form-login input{
     width : 100%;
-    margin: 5px 0px;
+    margin: 2px;
+    padding: 10px;
+    border-radius: 15px !important;
 }
+
 .area-button-login{
-
-    text-align:center;
+    text-align: center;
 }
-.area-button-login > button{
-    border-radius: 15px;
-    background-color: #772EB0;
-    color: white;
+
+.area-button-login > button {
     width: 180px;
+    height: 45px;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    border-radius: 15px !important;
+    background-color: #772EB0;
 }
-.area-other-login{
 
-    text-align:center;
+.area-other-login {
+    text-align: center;
 }
 
-.other-login-item{
-    
-}
-.other-login-item img{
+.other-login-item img {
     width: 100px;
     height: 40px;
     object-fit: cover;
-    border: 1px solid #B8BAE3;
+    border: 1px solid #cfcfcf;
     border-radius: 8px;
 }
+
 .caption-login{
     margin: 15px 0px;
 }
